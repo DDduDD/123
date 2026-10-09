@@ -1,0 +1,33 @@
+{
+  "source_acc": 0.8658536585365854,
+  "doco_acc": 0.8658536585365854,
+  "checkpoint": "/home/lz/DOCO-main/output_adni/source_site_seed2_ep100/best.pt",
+  "manifest": "/home/lz/DOCO-main/data/manifest_cn_ad_site_seed2.csv",
+  "args": {
+    "data_root": "/home/lz/DOCO-main/data",
+    "csv": "/home/lz/DOCO-main/data/ADNI.csv",
+    "manifest": "/home/lz/DOCO-main/data/manifest_cn_ad_site_seed2.csv",
+    "split_by": "site",
+    "test_ratio": 0.2,
+    "checkpoint": "/home/lz/DOCO-main/output_adni/source_site_seed2_ep100/best.pt",
+    "save_dir": "/home/lz/DOCO-main/output_adni/doco_tta_site_seed2_ep100_gate075",
+    "model_size": "small",
+    "img_size": 96,
+    "patch_size": 16,
+    "batch_size": 2,
+    "num_workers": 4,
+    "seed": 2,
+    "src_num_samples": 300,
+    "prompt_num": 8,
+    "doco_beta": 0.5,
+    "doco_lr": 0.1,
+    "warmup_step": 50,
+    "ema_alpha": 0.999,
+    "no_zscore": false,
+    "gate_threshold": 0.75,
+    "disable_gate": false
+  },
+  "gate_threshold": 0.75,
+  "gated_choice": "source",
+  "gated_acc": 0.8658536585365854
+}

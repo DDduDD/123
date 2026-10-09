@@ -1,0 +1,26 @@
+{
+  "source_acc": 0.6779661016949152,
+  "doco_acc": 0.6610169491525424,
+  "checkpoint": "/home/lz/DOCO-main/output_adni/source/best.pt",
+  "manifest": "/home/lz/DOCO-main/data/manifest_cn_ad_pairs.csv",
+  "args": {
+    "data_root": "/home/lz/DOCO-main/data",
+    "csv": "/home/lz/DOCO-main/data/ADNI.csv",
+    "manifest": "",
+    "checkpoint": "/home/lz/DOCO-main/output_adni/source/best.pt",
+    "save_dir": "/home/lz/DOCO-main/output_adni/doco_tta_bs4",
+    "model_size": "small",
+    "img_size": 96,
+    "patch_size": 16,
+    "batch_size": 4,
+    "num_workers": 4,
+    "seed": 1,
+    "src_num_samples": 300,
+    "prompt_num": 8,
+    "doco_beta": 0.1,
+    "doco_lr": 0.05,
+    "warmup_step": 20,
+    "ema_alpha": 0.999,
+    "no_zscore": false
+  }
+}
